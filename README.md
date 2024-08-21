@@ -11,7 +11,7 @@ Add `ethers-flashbots` to your `Cargo.toml`.
 ```toml
 # This is the development version, for the stable release refer
 # to crates.io
-ethers-flashbots = { git = "https://github.com/onbjerg/ethers-flashbots" }
+ethers-flashbots = { git = "https://github.com/luckytoad/ethers-flashbots" }
 ```
 
 ### Usage
