@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
-## [0.16.0]
+## [0.16.1]
 
 ### Added
 
@@ -200,8 +200,8 @@ Initial release.
 
 <!-- next-url !-->
 
-[Unreleased]: https://github.com/luckytoad/ethers-flashbots/compare/0.16.0...HEAD
-[0.16.0]: https://github.com/onbjerg/ethers-flashbots/compare/0.15.0...LuckyToad:ethers-flashbots:0.16.0
+[Unreleased]: https://github.com/luckytoad/ethers-flashbots/compare/0.16.1...HEAD
+[0.16.1]: https://github.com/onbjerg/ethers-flashbots/compare/0.15.0...LuckyToad:ethers-flashbots:0.16.1
 [0.15.0]: https://github.com/onbjerg/ethers-flashbots/compare/0.14.0...0.15.0
 [0.14.0]: https://github.com/onbjerg/ethers-flashbots/compare/0.13.1...0.14.0
 [0.13.1]: https://github.com/onbjerg/ethers-flashbots/compare/0.13.0...0.13.1

@@ -1,6 +1,6 @@
 [package]
 name = "ethers-flashbots"
-version = "0.16.0"
+version = "0.16.1"
 authors = ["Oliver Nordbjerg <hi@notbjerg.me>", "Riley <https://github.com/rileyg98>"]
 license = "MIT"
 edition = "2018"
