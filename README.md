@@ -2,7 +2,7 @@
 
 An [Ethers](https://github.com/gakonst/ethers-rs) middleware to send transactions as [Flashbots](https://docs.flashbots.net) bundles.
 
-This has been forked and modified to support bundle multiplexing via the Flashbots relay.
+This has been forked and modified to support bundle multiplexing via the Flashbots relay.by [rileyg98](https://github.com/rileyg98) for the [LuckyToad](https://app.luckytoad.org) DEX.
 
 ### Installation
 
