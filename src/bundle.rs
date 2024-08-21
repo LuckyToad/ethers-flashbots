@@ -81,6 +81,10 @@ pub struct BundleRequest {
     #[serde(skip_serializing_if = "Option::is_none")]
     #[serde(rename = "baseFee")]
     simulation_basefee: Option<u64>,
+
+    #[serde(skip_serializing_if = "Vec::is_empty")]
+    #[serde(rename = "builders")]
+    multiplex_builders: Vec<String>
 }
 
 fn serialize_uuid_as_string<S>(x: &Option<Uuid>, s: S) -> Result<S::Ok, S::Error>
@@ -112,6 +116,24 @@ impl BundleRequest {
     pub fn new() -> Self {
         Default::default()
     }
+
+    /// Adds a multiplex builder to the transaction request.
+    /// 
+    /// Names of builders must be from https://github.com/flashbots/dowg/blob/main/builder-registrations.json
+    pub fn push_builder<T: Into<String>>(mut self, bld: T) -> Self {
+        self.multiplex_builders.push(bld.into());
+        self
+    }
+
+    /// Adds a multiplex builder to the transaction request.
+    ///
+    /// This function takes a mutable reference to `self` and adds the specified
+    /// builder to the `multiplex_builders` vector. 
+    /// Names of builders must be from https://github.com/flashbots/dowg/blob/main/builder-registrations.json
+    pub fn add_builder<T: Into<String>>(&mut self, bld: T) {
+        self.multiplex_builders.push(bld.into());
+    }
+
 
     /// Adds a transaction to the bundle request.
     ///
