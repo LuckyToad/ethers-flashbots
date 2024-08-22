@@ -144,7 +144,7 @@ impl BundleRequest {
         }
     }
 
-    pub fn set_builders<T: Into<String>>(mut self, blds: &Vec<T>) {
+    pub fn set_builders<T: Into<String>>(mut self, blds: &Vec<T>) -> Self {
         for bld in blds {
             self.multiplex_builders.push(bld.into());
         }
