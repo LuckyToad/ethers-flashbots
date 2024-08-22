@@ -144,6 +144,13 @@ impl BundleRequest {
         }
     }
 
+    pub fn set_builders<T: Into<String>>(mut self, blds: &Vec<T>) {
+        for bld in blds {
+            self.multiplex_builders.push(bld.into());
+        }
+        self
+    }
+
 
     /// Adds a transaction to the bundle request.
     ///
