@@ -133,6 +133,16 @@ impl BundleRequest {
     pub fn add_builder<T: Into<String>>(&mut self, bld: T) {
         self.multiplex_builders.push(bld.into());
     }
+    /// Adds a list of multiplex builders to the transaction request.
+    ///
+    /// This function takes a mutable reference to `self` and adds the specified
+    /// builders to the `multiplex_builders` vector. 
+    /// Names of builders must be from https://github.com/flashbots/dowg/blob/main/builder-registrations.json
+    pub fn add_builders<T: Into<String>>(&mut self, blds: Vec<T>) {
+        for bld in blds {
+            self.multiplex_builders.push(bld.into());
+        }
+    }
 
 
     /// Adds a transaction to the bundle request.
